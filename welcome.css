@@ -1,0 +1,19 @@
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+.welcome-page {
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.welcome-page__container {
+	flex: auto;
+}
+
+.welcome-page__footer {
+	flex: 0 1 80px;
+}
