@@ -18,6 +18,16 @@ h2 {
   line-height: 48px;
 }
 
+input {
+  box-sizing: border-box;
+  height: 48px;
+  padding: 13px 13px 13px 56px;
+  border: 1px solid #979797;
+  font-size: 16px;
+  color: #858585;
+  outline: none;
+}
+
 .welcome-page {
 	height: 100%;
 	display: flex;
@@ -48,4 +58,28 @@ h2 {
 
 .welcome-page__copyright {
 
+}
+
+.welcome-page__fast-search {
+  display: flex;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  margin-right: 30px;
+}
+
+.input-group input + input {
+  border-left: none;
+}
+
+.input-group input:first-child {
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.input-group input:last-child {
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
