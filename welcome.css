@@ -21,27 +21,88 @@ h2 {
 input {
   box-sizing: border-box;
   height: 48px;
+  width: 100%;
   padding: 13px 13px 13px 56px;
   border: 1px solid #979797;
   font-size: 16px;
   color: #858585;
   outline: none;
+  background-repeat: no-repeat;
+  background-position: 21px 12px;
+}
+
+button {
+  height: 48px;
+  padding: 0 20px;
+  border-radius: 24px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .welcome-page {
 	height: 100%;
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
 }
 
 .welcome-page__container {
+  display: flex;
+  flex-flow: column nowrap;
 	flex: auto;
-  align-self: center;
+
+  background: linear-gradient(to bottom, rgba(42, 42, 42, 0.2) 0%, rgba(42, 42, 42, 0.7) 50% , rgba(42, 42, 42, 0.8) 100%), url("welcome-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.welcome-page__container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.welcome-page__logo {
+  text-align: center;
+  flex-basis: 100px !important;
+  flex-grow: 3 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-page__slogan {
+  color: #fff;
+}
+
+.welcome-page__fast-search {
+  display: flex;
+  justify-content: center;
+  min-width: 900px;
+  margin: 0 auto;
+}
+
+.welcome-page__search-btn {
+  flex: 0 0 166px;
+  border: none;
+  background-color: #0066cc;
+}
+
+.welcome-page__open-extended-search {
+
+}
+
+.welcome-page__extra-search-criteria-btn {
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, .5);
 }
 
 .welcome-page__footer {
-	flex: 0 1 80px;
+  flex: 0 1 80px;
+  min-height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,34 +113,43 @@ input {
   color: #fff;
 }
 
-.welcome-page__footer-logo {
-
-}
-
-.welcome-page__copyright {
-
-}
-
-.welcome-page__fast-search {
-  display: flex;
-  justify-content: center;
-}
-
 .input-group {
   display: flex;
+  flex: auto;
   margin-right: 30px;
 }
 
-.input-group input + input {
+.input-group__item {
+  flex: 1 0 20%;
+}
+
+.input-group__item:first-child {
+  flex: 3 1 auto;
+}
+
+.input-group__item + .input-group__item input {
   border-left: none;
 }
 
-.input-group input:first-child {
+.input-group__item:first-child input {
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
 }
 
-.input-group input:last-child {
+.input-group__item:last-child input  {
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
+}
+
+.input_location {
+  background-image: url("icons/location_icon.svg");
+}
+
+.input_rooms {
+  background-image: url("icons/house_icon.svg");
+}
+
+.input_price {
+  background-image: url("icons/money_icon.svg");
+  background-position: 21px 15px;
 }

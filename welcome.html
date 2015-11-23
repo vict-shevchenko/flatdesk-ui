@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Welcome to flatDesk</title>
+        <title>Добро пожаловать на flatDesk</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,23 +19,27 @@
         <!-- Add your site or application content here -->
         <div class="welcome-page">
              <div class="welcome-page__container">
-                <div class="welcome-page__logo">flatdesk</div>
+                <div class="welcome-page__logo">
+                    <img src="logo.svg" alt="Добро пожаловать на flatDesk">
+                </div>
                 <div class="welcome-page__slogan">
                     <h1>Аренда без посередников. Наконец-то</h1>
                     <h2>Поможем снять квартиру в Киеве. Быстро и просто.</h2>
                 </div>
                 <div class="welcome-page__fast-search">
                     <div class="input-group">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
+                        <div class="input-group__item"><input type="text" class="input_location" placeholder="В каком районе будем искать?"></div>
+                        <div class="input-group__item"><input type="text" class="input_rooms" placeholder="Комнат"></div>
+                        <div class="input-group__item"><input type="text" class="input_price" placeholder="Цена до"></div>
                     </div>
-                    <button>Поиск</button>
+                    <button class="welcome-page__search-btn">Найти</button>
                 </div>
-                <div class="welcome-page__open-extended-search">extra options</div>
+                <div class="welcome-page__open-extended-search">
+                    <button class="welcome-page__extra-search-criteria-btn">+ Добавить параметры</button>
+                </div>
             </div>
             <div class="welcome-page__footer">
-                <div class="welcome-page__footer-logo">flatdesk</div>
+                <div class="welcome-page__footer-logo"><img src="logo.svg" alt="flatDesk" width="106" height="24"></div>
                 <div class="welcome-page__copyright">© Made with ❤ in Kyiv. 2015</div>
             </div>
         </div>
