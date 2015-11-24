@@ -95,9 +95,17 @@ button:hover {
 
 }
 
-.welcome-page__extra-search-criteria-btn {
+.welcome-page__extra-search-btn {
   border: 2px solid #fff;
   background: rgba(255, 255, 255, .5);
+}
+
+.welcome-page__extra-search-container {
+  height: 0;
+}
+
+.welcome-page__extra-search-container_visible {
+  height: 100px;
 }
 
 .welcome-page__footer {
