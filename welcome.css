@@ -53,7 +53,7 @@ button:hover {
 .welcome-page__container {
   display: flex;
   flex-flow: column nowrap;
-	flex: auto;
+	flex: 1 0 calc(100% - 80px);
 
   background: linear-gradient(to bottom, rgba(42, 42, 42, 0.2) 0%, rgba(42, 42, 42, 0.7) 50% , rgba(42, 42, 42, 0.8) 100%), url("welcome-bg.jpg");
   background-size: cover;
