@@ -70,14 +70,12 @@ button:hover {
 }
 
 .welcome-page__container-item {
-  flex: 1;
+  flex: 1 1 0;
   text-align: center;
 }
 
 .welcome-page__logo {
   text-align: center;
-  flex-basis: 100px;
-  flex-grow: 1.5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,33 +86,50 @@ button:hover {
 }
 
 .welcome-page__fast-search {
+  position: relative;
   display: flex;
   justify-content: center;
-  min-width: 900px;
+  flex-flow: wrap;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .welcome-page__search-btn {
+  position: relative;
+  z-index: 1;
   flex: 0 0 166px;
+  margin: 0 15px;
   border: none;
   background-color: #0066cc;
-}
-
-.welcome-page__open-extended-search {
 
 }
 
 .welcome-page__extra-search-btn {
+  display: none;
   border: 2px solid #fff;
   background: rgba(255, 255, 255, .5);
 }
 
+@media (min-width: 992px) {
+  .welcome-page__extra-search-btn {
+    display: inline;
+  }
+}
+
 .welcome-page__extra-search-container {
   position: absolute;
-  bottom: 80px;
+  left: 0;
+  top: 100%;
   width: 100%;
+  height: 0;
+  transition: top 700ms ease;
 
-  height: 200px;
+  background-color: #fff;
+}
+
+.welcome-page__fast-search_show-extra .welcome-page__extra-search-container{
+  height: 100%;
+  top: 0;
 }
 
 .welcome-page__extra-search-container_visible {
@@ -139,9 +154,11 @@ button:hover {
 }
 
 .input-group {
+  position: relative;
   display: flex;
-  flex: auto;
-  margin-right: 30px;
+  flex: 1 1 738px;
+  margin: 0 15px;
+  z-index: 1;
 }
 
 .input-group__item {
