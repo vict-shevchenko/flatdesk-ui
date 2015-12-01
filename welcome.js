@@ -1,11 +1,10 @@
 (function() {
   'use strict'
 
-  var extraSearchParamsBtn = document.getElementsByClassName('welcome-page__extra-search-btn').item(0),
-      fastSearchContainer = document.getElementsByClassName('welcome-page__fast-search').item(0);
+  var fastSearchContainer = document.getElementsByClassName('welcome-page__fast-search').item(0);
 
   function addEventListners() {
-    extraSearchParamsBtn.addEventListener('click', showExtraSearchParamsContainer)
+    //extraSearchParamsBtn.addEventListener('click', showExtraSearchParamsContainer)
   };
 
   function showExtraSearchParamsContainer() {
@@ -15,6 +14,11 @@
   }
 
 
-  addEventListners();
+ // addEventListners();
 
 })();
+
+showHiFiBackground = function () {
+  var opaqueBg = document.getElementsByClassName('welcome-page__container-bg').item(0);
+  opaqueBg.classList.toggle('opaque')
+}

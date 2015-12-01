@@ -17,35 +17,34 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <img src="welcome-bg.jpg" style="width:0; height:0; display: none" alt="" onload="showHiFiBackground()">
         <div class="welcome-page">
              <div class="welcome-page__container">
-                <div class="welcome-page__container-item welcome-page__logo">
+                <div class="welcome-page__container-bg"></div>
+                <div class="welcome-page__logo">
                     <img src="logo.svg" alt="Добро пожаловать на flatDesk">
                 </div>
-                <div class="welcome-page__container-item welcome-page__slogan">
+                <div class="welcome-page__slogan">
                     <h1>Аренда без посередников. Наконец-то</h1>
                     <h2>Поможем снять квартиру в Киеве. Быстро и просто.</h2>
                 </div>
-                <div class="welcome-page__container-item welcome-page__fast-search">
+                <div class="welcome-page__fast-search">
                     <div class="input-group">
                         <div class="input-group__item"><input type="text" class="input_location" placeholder="В каком районе будем искать?"></div>
                         <div class="input-group__item"><input type="text" class="input_rooms" placeholder="Комнат"></div>
                         <div class="input-group__item"><input type="text" class="input_price" placeholder="Цена до"></div>
                     </div>
                     <button class="welcome-page__search-btn">Найти</button>
-                    <button class="welcome-page__extra-search-btn">+ Добавить параметры</button>
-                    <div class="welcome-page__extra-search-container">
-                        <span style="color: red">extende search 1111</span><br/>
-                        <span style="color: green">extende search 2222</span><br/>
-                        <span style="color: blue">extende search 3333</span><br/>
-                    </div>
                 </div>
             </div>
-        </div>
-        <div class="welcome-page__footer">
+            <div class="welcome-page__frequent-searches">
+                some frequesnt searches or advertisements will go here
+            </div>
+            <div class="welcome-page__footer">
                 <div class="welcome-page__footer-logo"><img src="logo.svg" alt="flatDesk" width="106" height="24"></div>
                 <div class="welcome-page__copyright">© Made with ❤ in Kyiv. 2015</div>
             </div>
+        </div>
         <script src="welcome.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!-- <script>
