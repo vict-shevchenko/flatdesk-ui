@@ -1,6 +1,7 @@
 html, body {
 	margin: 0;
 	height: 100%;
+  font-family: 'Noto Sans', Arial, serif
 }
 
 div {
@@ -74,7 +75,7 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  
+
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
