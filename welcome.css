@@ -1,7 +1,8 @@
 html, body {
 	margin: 0;
 	height: 100%;
-  font-family: 'Noto Sans', Arial, serif
+  font-family: 'Noto Sans', Arial, serif;
+  font-size: 100%;
 }
 
 div {
@@ -14,13 +15,13 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 48px;
-  line-height: 80px;
+  font-size: 2.75em;
+  line-height: 1.417;
 }
 
 h2 {
-  font-size: 24px;
-  line-height: 48px;
+  font-size: 1.125em;
+  line-height: 2.222;
 }
 
 input {
@@ -58,10 +59,8 @@ button:hover {
 
 .welcome-page__container {
   position: relative;
-
-  display: flex;
-  flex-flow: column nowrap;
-	height: 75%;
+	min-height: 100%;
+  height: 100%;
 
   background-size: cover;
   background-position: 50% 50%;
@@ -87,24 +86,26 @@ button:hover {
 }
 
 .welcome-page__logo {
-  flex: 1 1 35%;
+  height: 34%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .welcome-page__slogan {
-  flex: 1 1 auto;
   text-align: center;
   color: #fff;
 }
 
 .welcome-page__fast-search {
-  flex: 1 1 40%;
   display: flex;
   justify-content: center;
   flex-flow: wrap;
   padding-top: 48px;
+}
+
+.welcome-page__empty{
+    height: 80px;
 }
 
 .welcome-page__search-btn {
@@ -112,11 +113,6 @@ button:hover {
   margin: 0 15px;
   border: none;
   background-color: #0066cc;
-}
-
-.welcome-page__frequent-searches {
-  height: 500px;
-  background-color: lightcoral;
 }
 
 .welcome-page__footer {
