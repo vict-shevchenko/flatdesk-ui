@@ -1,7 +1,7 @@
 html, body {
 	margin: 0;
 	height: 100%;
-	font-family: 'Noto Sans', Arial, serif;
+	font-family: 'Noto Sans', Arial, sans-serif;
 	font-size: 100%;
 }
 
@@ -44,6 +44,7 @@ button {
 	border: none;
 	font-size: 16px;
 	outline: none;
+  font-family: 'Noto Sans', Arial, sans-serif;
 }
 
 button:hover {
