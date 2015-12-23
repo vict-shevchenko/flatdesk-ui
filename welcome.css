@@ -61,6 +61,10 @@ button:hover {
 	cursor: pointer;
 }
 
+svg {
+  overflow: hidden;
+}
+
 .welcome-page {
 	position: relative;
 	height: 100%;
