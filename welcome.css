@@ -212,7 +212,9 @@ background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%2
   .welcome-page__logo {
     height: 20%;
   }
+}
 
+@media (max-height: 480px) {
   .welcome-page__empty {
     height: 40px;
   }
