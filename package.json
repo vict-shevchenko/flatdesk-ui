@@ -1,0 +1,19 @@
+{
+  "name": "flatdesk-ui",
+  "version": "1.0.0",
+  "description": "test typescript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vict-shevchenko/flatdesk-ui.git"
+  },
+  "author": "Viktor Shevchenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vict-shevchenko/flatdesk-ui/issues"
+  },
+  "homepage": "https://github.com/vict-shevchenko/flatdesk-ui#readme"
+}
