@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/vict-shevchenko/flatdesk-ui/issues"
   },
-  "homepage": "https://github.com/vict-shevchenko/flatdesk-ui#readme"
+  "homepage": "https://github.com/vict-shevchenko/flatdesk-ui#readme",
+  "devDependencies": {
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.9",
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  }
 }
