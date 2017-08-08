@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom'
 import greeter from './greeter'
+// changes in br 2 - 1st
 
 const user = { firstName: "Jane", lastName: "User" };
 
